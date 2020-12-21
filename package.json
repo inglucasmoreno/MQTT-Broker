@@ -1,0 +1,19 @@
+{
+  "name": "broker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:broker": "node broker.js",
+    "start:pub": "node pub.js",
+    "start:sub": "node sub.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "mosca": "^2.8.3",
+    "mqtt": "^4.1.0"
+  }
+}
