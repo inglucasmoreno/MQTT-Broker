@@ -2,8 +2,8 @@
 
 const chalk = require('chalk');
 const mqtt = require('mqtt');
-const client = mqtt.connect('mqtt://192.168.2.113:1883');
-const topic = 'alarma_estado';
+const client = mqtt.connect('mqtt://localhost:1883');
+const topic = 'estado_alarma';
 
 // Evento: Nuevo Mensaje
 client.on('message', (topic, message) => {
