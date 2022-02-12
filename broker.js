@@ -17,7 +17,7 @@ broker.on('clientConnected', client => {
 
 // Evento: Desconexion de cliente
 broker.on('clientDisconnected', client => {
-    console.log(chalk.blue('[MQTT Broker]') + ` - Usuario desconectado - ${client.id}`);    
+    console.log(chalk.blue('[MQTT Broker]') + ` - Usuario desconectado - ${client.id}`);
 })
 
 // Evento: Publicacion

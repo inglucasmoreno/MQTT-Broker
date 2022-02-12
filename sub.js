@@ -3,11 +3,11 @@
 const chalk = require('chalk');
 const mqtt = require('mqtt');
 const client = mqtt.connect('mqtt://localhost:1883');
-const topic = 'estado_alarma';
+const topic = 'estado_alarma_2';
 
 // Evento: Nuevo Mensaje
 client.on('message', (topic, message) => {
-    console.log(chalk.blue('[MQTT]') + ` - Mensaje Recibido - Topico: ${topic} | Mensaje: ${message}`);      
+    console.log(chalk.blue('[MQTT]') + ` - Mensaje Recibido - Topico: ${topic} | Mensaje: ${message}`);
 });
 
 // Evento: Conexion establecida
